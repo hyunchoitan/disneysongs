@@ -1,0 +1,32 @@
+{
+  "name": "disneysongs",
+  "version": "1.0.0",
+  "description": "Top 30 Disney Songs with youtube video clips",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "del": "^6.0.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyunchoitan/disneysongs.git"
+  },
+  "author": "Hyun Choi <bloarin@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyunchoitan/disneysongs/issues"
+  },
+  "homepage": "https://github.com/hyunchoitan/disneysongs#readme"
+}
