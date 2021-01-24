@@ -1,2 +1,26 @@
 @import "_reset";
 @import "_variables";
+
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+header {
+  background-color: $background;
+  height: 100vh;
+  width: $width;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: $main;
+}
+
+ul {
+  background-color: $main;
+  height: 5000vh;
+  margin-left: $width;
+  color: $background;
+}
