@@ -4,7 +4,7 @@
       @content;
     }
   } @else if $device == "smallDevice" {
-    @media screen and (max-width: 800px) {
+    @media screen and (min-width: 461px) and (max-width: 799px) {
       @content;
     }
   } @else if $device == "mediumDevice" {

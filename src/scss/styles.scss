@@ -45,6 +45,7 @@ header {
 .title {
   width: 80%;
   height: 30%;
+  letter-spacing: 0.3rem;
   margin-top: 3rem;
   font-size: 6rem;
   text-transform: uppercase;
@@ -113,8 +114,8 @@ ul {
   flex-direction: column;
   align-items: center;
   @include responsive("phone") {
-    margin-left: 0;
     margin-top: 100vh;
+    margin-left: 0;
     font-size: 1.1rem;
   }
   @include responsive("smallDevice") {
@@ -133,22 +134,56 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: beige;
-  @include responsive("phone") {
-    height: 60vh;
-  }
+  background: #457fca; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #5691c8,
+    #457fca
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #5691c8,
+    #457fca
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  // @include responsive("phone") {
+  //   height: 60vh;
+  // }
+  // @include responsive("smallDevice") {
+  //   height: 60vh;
+  // }
   @include responsive("smallDevice") {
-    height: 60vh;
+    justify-content: normal;
+    padding-top: 3rem;
   }
-  @include responsive("mediumDevice") {
-    height: 60vh;
-  }
-  @include responsive("largeDevice") {
-    height: 80vh;
+  @include responsive("phone") {
+    justify-content: normal;
+    padding-top: 3rem;
   }
 }
 
-iframe {
+.song-info {
+  width: 80%;
+  height: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  padding-top: 1rem;
+  width: 80%;
+  height: 15%;
+}
+
+.video-wrapper {
   width: 80%;
   height: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
 }
