@@ -40,68 +40,63 @@ header {
     height: 100vh;
     position: absolute;
   }
-}
-
-.title {
-  width: 80%;
-  height: 30%;
-  letter-spacing: 0.3rem;
-  margin-top: 3rem;
-  font-size: 6rem;
-  text-transform: uppercase;
-  @include responsive("smallDevice") {
-    font-size: 4rem;
+  .title {
+    width: 80%;
+    height: 30%;
+    letter-spacing: 0.3rem;
+    margin-top: 3rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    @include responsive("smallDevice") {
+      font-size: 4rem;
+    }
+    @include responsive("phone") {
+      margin-top: 0;
+      font-size: 3.7rem;
+    }
   }
-  @include responsive("phone") {
-    margin-top: 0;
-    font-size: 3.7rem;
-  }
-}
-
-.bottom {
-  width: 80%;
-  height: 30%;
-}
-
-.subtitle {
-  width: 100%;
-  @include responsive("phone") {
-    margin-top: 0;
-    font-size: 3.5rem;
-  }
-  font-size: 1.6em;
-  margin-bottom: 1.5rem;
-  @include responsive("smallDevice") {
-    font-size: 1.3em;
-  }
-  @include responsive("phone") {
-    font-size: 1.3rem;
-  }
-}
-
-.content {
-  font-size: inherit;
-  line-height: 1.4;
-  margin-bottom: 1.5rem;
-  @include responsive("smallDevice") {
-    font-size: 1.1rem;
-  }
-  @include responsive("phone") {
-    font-size: 1.1rem;
-  }
-}
-
-a {
-  font-size: inherit;
-  text-decoration: none;
-  color: black;
-  opacity: 0.6;
-  border-bottom: 1px solid black;
-  &:hover {
-    opacity: 0.9;
-  }
-  @include responsive("smallDevice") {
-    font-size: 1.1rem;
+  .bottom {
+    width: 80%;
+    height: 30%;
+    .subtitle {
+      width: 100%;
+      @include responsive("phone") {
+        margin-top: 0;
+        font-size: 3.5rem;
+      }
+      font-size: 1.6em;
+      margin-bottom: 1.5rem;
+      @include responsive("smallDevice") {
+        font-size: 1.3em;
+      }
+      @include responsive("phone") {
+        font-size: 1.3rem;
+      }
+    }
+    .content {
+      font-size: inherit;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
+      @include responsive("smallDevice") {
+        font-size: 1.1rem;
+      }
+      @include responsive("phone") {
+        font-size: 1.1rem;
+      }
+    }
+    a {
+      font-size: inherit;
+      text-decoration: none;
+      color: black;
+      opacity: 0.6;
+      border-bottom: 1px solid black;
+      &:hover {
+        opacity: 0.9;
+      }
+      @include responsive("smallDevice") {
+        font-size: 1.1rem;
+      }
+    }
   }
 }
 
@@ -125,65 +120,45 @@ ul {
   @include responsive("mediumDevice") {
     margin-left: 45%;
   }
-}
-
-li {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #457fca; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #5691c8,
-    #457fca
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #5691c8,
-    #457fca
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  // @include responsive("phone") {
-  //   height: 60vh;
-  // }
-  // @include responsive("smallDevice") {
-  //   height: 60vh;
-  // }
-  @include responsive("smallDevice") {
-    justify-content: normal;
-    padding-top: 3rem;
+  li {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #457fca;
+    background: -webkit-linear-gradient(to bottom, #5691c8, #457fca);
+    background: linear-gradient(to bottom, #5691c8, #457fca);
+    @include responsive("smallDevice") {
+      justify-content: normal;
+      padding-top: 3rem;
+    }
+    @include responsive("phone") {
+      justify-content: normal;
+      padding-top: 3rem;
+    }
+    .song-info {
+      width: 80%;
+      height: 8%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .video-wrapper {
+      width: 80%;
+      height: 50%;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .description {
+      padding-top: 1rem;
+      width: 80%;
+      height: 15%;
+    }
   }
-  @include responsive("phone") {
-    justify-content: normal;
-    padding-top: 3rem;
-  }
-}
-
-.song-info {
-  width: 80%;
-  height: 8%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.description {
-  padding-top: 1rem;
-  width: 80%;
-  height: 15%;
-}
-
-.video-wrapper {
-  width: 80%;
-  height: 50%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-iframe {
-  width: 100%;
-  height: 100%;
 }
