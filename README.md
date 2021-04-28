@@ -22,6 +22,7 @@ This project is created with
 ## Features
 
 * Responsive Design
+* Fixed cover section
 * Supports 0.5% or last 2 versions of each browsers
 
 ## The Project Status
@@ -29,12 +30,9 @@ This project is created with
 
 - [x] Scaffolding
 - [x] Gulp + Babel set up
-- [x] PUG compilation
-- [x] webserver + watching files
-- [x] Image optimization
+- [x] Watching files
 - [x] SCSS compilation
 - [x] Main page Markup + SCSS
 - [x] Responsive design
-- [ ] Detail project page Markup + SCSS
 - [ ] Babel Support
 - [ ] Deploying
