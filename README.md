@@ -27,13 +27,13 @@ This project is created with
 ## The Project Status
 
 
-- [] Scaffolding
-- [] Gulp + Babel set up
-- [] PUG compilation
-- [] webserver + watching files
-- [] Image optimization
-- [] SCSS compilation
-- [] Main page Markup + SCSS
+- [x] Scaffolding
+- [x] Gulp + Babel set up
+- [x] PUG compilation
+- [x] webserver + watching files
+- [x] Image optimization
+- [x] SCSS compilation
+- [x] Main page Markup + SCSS
 - [x] Responsive design
 - [ ] Detail project page Markup + SCSS
 - [ ] Babel Support
